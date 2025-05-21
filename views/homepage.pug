@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1= title
+    a(href='/update-cobj') Add to this table
+    if pandas.length
+      table
+        thead
+          tr
+            th Name
+            th Bio
+            th Species
+        tbody
+          each panda in pandas
+            tr
+              td= panda.properties.name
+              td= panda.properties.bio
+              td= panda.properties.species
+    else
+      p No pandas found.
