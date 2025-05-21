@@ -9,7 +9,7 @@ const HUB_API_KEY = process.env.HUBSPOT_API_KEY;
 console.log("Token:", HUB_API_KEY); // Debug token
 
 // ID Custom Object kamu (misalnya: Panda)
-const objectTypeId = '2-168780239';
+const objectTypeId = '2-16878023';
 
 const headers = {
     "Authorization": `Bearer ${HUB_API_KEY}`,
