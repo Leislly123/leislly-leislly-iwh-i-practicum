@@ -22,7 +22,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// ROUTE 1 - Homepage: tampilkan data custom object
+// ROUTE 1 - Homepage: 
 app.get("/", async (req, res) => {
     const url = `https://api.hubapi.com/crm/v3/objects/${objectTypeId}?properties=name,bio,species`;
 
