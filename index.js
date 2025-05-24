@@ -57,7 +57,7 @@ app.post("/update-cobj", async (req, res) => {
         },
     };
 
-    console.log("Sending data to HubSpot:", body); // Debug body yang dikirim
+    console.log("Sending data to HubSpot:", body); // Debug body 
 
     try {
         await axios.post(url, body, { headers });
