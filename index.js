@@ -8,7 +8,7 @@ const app = express();
 const HUB_API_KEY = process.env.HUBSPOT_API_KEY;
 console.log("Token:", HUB_API_KEY); // Debug token
 
-// ID Custom Object kamu (misalnya: Panda)
+// Custom Object Panda
 const objectTypeId = '2-168780239';
 
 const headers = {
